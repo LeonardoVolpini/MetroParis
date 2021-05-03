@@ -15,6 +15,10 @@ public class TestModel {
 		}
 		List<Fermata> raggiungibili= m.fermateRaggiungibili(p);
 		System.out.println(raggiungibili);
+		
+		Fermata a = m.trovaFermata("Temple");
+		List<Fermata> best= m.trovaCammino(p, a);
+		System.out.println(best);
 	}
 
 }
